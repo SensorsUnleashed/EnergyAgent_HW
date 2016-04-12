@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/omn/Workspace/Hardware/powermeasurement/power.sch</source>
+    <date>tir 22 mar 2016 13:00:21 CET</date>
+    <tool>Eeschema 4.0.2-4+6225~38~ubuntu15.10.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Power Meter</title>
+        <company/>
+        <rev/>
+        <date>2016-03-11</date>
+        <source>power.sch</source>
+        <comment number="1" value="Single Phase"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">CERM, 10V, +/-10%, X5R</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E27700</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>NM</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2776F</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10uF</value>
+      <footprint>Capacitors_Tantalum_SMD:TantalC_SizeT_EIA-3528</footprint>
+      <datasheet>http://www.vishay.com/docs/40002/293d.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">TANT, 10V, +/-20%, 2.5 ohm</field>
+        <field name="Package ID">3528-21</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Vishay Sprague</field>
+        <field name="Manufacturer Part Number">293D106X0010B2TE3</field>
+      </fields>
+      <libsource lib="device" part="CP1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2934C</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>470nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E295AB</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>1.5k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E29EA5</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>1.5k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E29F57</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>47k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">5%, 0.063W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2AC94</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>2.2nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://datasheets.avx.com/X7RDielectric.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">CERM, 25V, +/-10%, X7R</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">AVX Corporation</field>
+        <field name="Manufacturer Part Number">0805ZC222JAT2A</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2AD3F</tstamp>
+    </comp>
+    <comp ref="LED3">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS-22-99-0226/S_110_LTST-C170TBKT.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">BLUE, CLEAR</field>
+        <field name="Description">Blue</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Lite-On Inc.</field>
+        <field name="Manufacturer Part Number">LTST-C170TBKT</field>
+      </fields>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2B150</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>390</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">5%, 0.125W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Panasonic Electronic Components</field>
+        <field name="Manufacturer Part Number">ERJ-6GEYJ391V</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2B3F1</tstamp>
+    </comp>
+    <comp ref="LED2">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS22-2000-075/S_110_LTST-S220KGKT.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">GREEN,CLEAR</field>
+        <field name="Description">Green</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Lite-On Inc.</field>
+        <field name="Manufacturer Part Number">LTST-S220KGKT</field>
+      </fields>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2B4A4</tstamp>
+    </comp>
+    <comp ref="LED1">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS-22-99-0150/S_110_LTST-C170KRKT.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">RED, CLEAR</field>
+        <field name="Description">Red</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Lite-On Inc.</field>
+        <field name="Manufacturer Part Number">LTST-C170KRKT</field>
+      </fields>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2B4E8</tstamp>
+    </comp>
+    <comp ref="LED4">
+      <value>LED4</value>
+      <footprint>LEDs:LED_0805</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS22-2004-078/S_110_LTW-170TK.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">WHITE</field>
+        <field name="Description">White</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Lite-On Inc.</field>
+        <field name="Manufacturer Part Number">LTW-170TK</field>
+      </fields>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2B52F</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>330k</value>
+      <footprint>Resistors_SMD:R_2010</footprint>
+      <datasheet>http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0005+ERJS1DF3303U+7+WW</datasheet>
+      <fields>
+        <field name="Characteristics">1%, 1W</field>
+        <field name="Package ID">2010M</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Panasonic Electronic Components </field>
+        <field name="Manufacturer Part Number"> ERJ-S1DF3303U</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2DC6D</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>0.5m</value>
+      <footprint>Resistors_SMD:R_2512</footprint>
+      <datasheet>http://www.irctt.com/file.aspx?product_id=3&amp;file_type=datasheet</datasheet>
+      <fields>
+        <field name="Characteristics">1W, 1%</field>
+        <field name="Description">Shunt Resistor</field>
+        <field name="Package ID">2512</field>
+        <field name="Source">SPEC</field>
+        <field name="Critical">X</field>
+        <field name="Manufacturer Name">INTERNATIONAL RESISTIVE</field>
+        <field name="Manufacturer Part Number">ULRB12512R0005FLFSLT</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2E4F7</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>SMAJ5.0CA</value>
+      <footprint>Diodes_SMD:SMA_Standard</footprint>
+      <datasheet>http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf</datasheet>
+      <fields>
+        <field name="Description">TVS DIODE 5VWM 9.2VC SMA </field>
+        <field name="Package ID">DO-214AC</field>
+        <field name="Source">SPEC</field>
+        <field name="Manufacturer Name">Littelfuse Inc.</field>
+        <field name="Manufacturer Part Number">SMAJ5.0CA </field>
+      </fields>
+      <libsource lib="device" part="TVS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2DE46</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>100</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">1%, 0.063W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2E9B1</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>1.00k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">1%, 0.063W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E2EA83</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>INDUCTOR</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0110S0100BLM21B.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">120 Ohm @ 100MHz </field>
+        <field name="Description">Chip Ferrite Bead</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">SPEC</field>
+        <field name="Manufacturer Name">Murata Electronics North America</field>
+        <field name="Manufacturer Part Number">BLM21BD121SN1D</field>
+      </fields>
+      <libsource lib="device" part="INDUCTOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E3043C</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>47pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E3106D</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1.5k</value>
+      <footprint>Resistors_SMD:R_2010</footprint>
+      <datasheet>http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">1%, 1W</field>
+        <field name="Package ID">2010M</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Rohm Semiconductor</field>
+        <field name="Manufacturer Part Number">MCR50JZHF1501</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E3124A</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>15pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Description">CAP, CERM, 50V, +/-10%, X7R</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E3492A</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>22uF/10V</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Comment">Tantalum capacitor</field>
+      </fields>
+      <libsource lib="device" part="CP1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E34DF8</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>7V</value>
+      <footprint>Diodes_SMD:SMB_Standard</footprint>
+      <datasheet>/home/omn/Workspace/Hardware/powermeasurement/Datablade/SMBJ5.0_TVSDiode.pdf</datasheet>
+      <fields>
+        <field name="Package ID">SMB</field>
+        <field name="Source">ANY</field>
+        <field name="Notes">Optional</field>
+        <field name="Manufacturer Name">Diodes Incorporated</field>
+        <field name="Manufacturer Part Number"> SMBJ7.0A-FDICT-ND </field>
+      </fields>
+      <libsource lib="device" part="ZENER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E35E76</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>HLK-PM01</value>
+      <footprint>powermodule:HLK-PM01</footprint>
+      <libsource lib="powersupply" part="HLK-PM01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E30194</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AMS1117</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+      <libsource lib="AMS1117" part="AMS1117"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E394BA</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>1x3</value>
+      <footprint>Connect:IDC_Header_Straight_14pins</footprint>
+      <datasheet>http://media.digikey.com/pdf/Data%20Sheets/Tyco%20Electonics%20AMP%20PDFs/x-1634688-x_Dwg.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">14 pins</field>
+        <field name="Description">CONN HEADER 14POS .100 VERT GOLD </field>
+        <field name="Package ID">2X7BOXHEADER</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">TE Connectivity AMP Connectors </field>
+        <field name="Manufacturer Part Number">1-1634688-4</field>
+      </fields>
+      <libsource lib="conn" part="CONN_02X07"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E3DE85</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>NM</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Notes">Used only if JTAG should be used</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E3EA3B</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E3F5FF</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E41475</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>JUMPER3</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <datasheet>http://www.sullinscorp.com/catalogs/77_PAGE108-109_.100_MALE_HDR.pdf</datasheet>
+      <fields>
+        <field name="Description">CONN HEADER .100 SINGL STR 3POS</field>
+        <field name="Package ID">PBC03SAAN</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Sullins Connector Solutions</field>
+        <field name="Manufacturer Part Number">S1011E-03-ND </field>
+      </fields>
+      <libsource lib="device" part="JUMPER3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E52EC4</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BC849</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>/home/omn/Workspace/Hardware/powermeasurement/Datablade/BC849_BC850.pdf</datasheet>
+      <fields>
+        <field name="Package ID">SOT-23</field>
+      </fields>
+      <libsource lib="transistors" part="BC849"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E6ABD2</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">10%</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E6AE3F</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>BAS32</value>
+      <footprint>Diodes_SMD:SOD-323</footprint>
+      <datasheet>http://www.nxp.com/documents/data_sheet/BAS321.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">200V, 250MA</field>
+        <field name="Description">DIODE GEN PURP</field>
+        <field name="Package ID">SOD-323</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">NXP Semiconductors</field>
+        <field name="Manufacturer Part Number">BAS321,115 </field>
+      </fields>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E746F4</tstamp>
+    </comp>
+    <comp ref="K1">
+      <value>RELAY_1RT</value>
+      <footprint>My modules:Relay_SRD_XVDC-SL-C_Series</footprint>
+      <datasheet>/home/omn/Workspace/Hardware/powermeasurement/Datablade/Relay_SRD-0XVDC-SL-C.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">5V, 10A, SRD</field>
+        <field name="Source">SPEC</field>
+        <field name="Manufacturer Name">SONGLE</field>
+        <field name="Manufacturer Part Number">SRD-5VDC-SL-C</field>
+      </fields>
+      <libsource lib="Relays" part="RELAY_1RT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E9B4FE</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>msp430i2041</value>
+      <footprint>Housings_SSOP:TSSOP-28_4.4x9.7mm_Pitch0.65mm</footprint>
+      <datasheet>/home/omn/Workspace/Hardware/powermeasurement/Datablade/msp430i2041.pdf</datasheet>
+      <libsource lib="Microprocessors" part="msp430i2041"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56E9F10A</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56ED15C1</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>330k</value>
+      <footprint>Resistors_SMD:R_2010</footprint>
+      <datasheet>http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0005+ERJS1DF3303U+7+WW</datasheet>
+      <fields>
+        <field name="Characteristics">1%, 1W</field>
+        <field name="Package ID">2010M</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Panasonic Electronic Components </field>
+        <field name="Manufacturer Part Number"> ERJ-S1DF3303U</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EE8EA8</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>330k</value>
+      <footprint>Resistors_SMD:R_2010</footprint>
+      <datasheet>http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0005+ERJS1DF3303U+7+WW</datasheet>
+      <fields>
+        <field name="Characteristics">1%, 1W</field>
+        <field name="Package ID">2010M</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Panasonic Electronic Components </field>
+        <field name="Manufacturer Part Number"> ERJ-S1DF3303U</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EE8F81</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>SMAJ5.0CA</value>
+      <footprint>Diodes_SMD:SMA_Standard</footprint>
+      <datasheet>http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf</datasheet>
+      <fields>
+        <field name="Description">TVS DIODE 5VWM 9.2VC SMA </field>
+        <field name="Package ID">DO-214AC</field>
+        <field name="Source">SPEC</field>
+        <field name="Manufacturer Name">Littelfuse Inc.</field>
+        <field name="Manufacturer Part Number">SMAJ5.0CA </field>
+      </fields>
+      <libsource lib="device" part="TVS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EEA550</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>1.00k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">1%, 0.063W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EED3B3</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>1.00k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">1%, 0.063W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EED480</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>INDUCTOR</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0110S0100BLM21B.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">120 Ohm @ 100MHz </field>
+        <field name="Description">Chip Ferrite Bead</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">SPEC</field>
+        <field name="Manufacturer Name">Murata Electronics North America</field>
+        <field name="Manufacturer Part Number">BLM21BD121SN1D</field>
+      </fields>
+      <libsource lib="device" part="INDUCTOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EF00CE</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>47pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EF2D88</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>47pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EF343F</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>47pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EF3562</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>15pF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Description">CAP, CERM, 50V, +/-10%, X7R</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EF4115</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>NM</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Notes">Used only if JTAG should be used</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56EFFF64</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>NM</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Notes">Used only if JTAG should be used</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F0002A</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>NM</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Notes">Used only if JTAG should be used</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F000ED</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">CERM, 10V, +/-10%, X5R</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F01ABE</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>390</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">5%, 0.125W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Panasonic Electronic Components</field>
+        <field name="Manufacturer Part Number">ERJ-6GEYJ391V</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F0A619</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>390</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">5%, 0.125W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Panasonic Electronic Components</field>
+        <field name="Manufacturer Part Number">ERJ-6GEYJ391V</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F0A6EB</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>390</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="Characteristics">5%, 0.125W</field>
+        <field name="Package ID">0805</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Panasonic Electronic Components</field>
+        <field name="Manufacturer Part Number">ERJ-6GEYJ391V</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F0A7BC</tstamp>
+    </comp>
+    <comp ref="F2">
+      <value>NM</value>
+      <footprint>Fuse_Holders_and_Fuses:BladeFuse-Mini</footprint>
+      <fields>
+        <field name="Characteristics">20A, 125V</field>
+        <field name="Package ID">6125FA</field>
+        <field name="Source">ANY</field>
+        <field name="Notes">Only used when no relay is present</field>
+      </fields>
+      <libsource lib="device" part="FUSE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F1CC68</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>1A</value>
+      <footprint>Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_Schurter_0031_8201</footprint>
+      <datasheet>http://www.mouser.com/ds/2/358/typ_OGN-14523.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">10A, 250V</field>
+        <field name="Description 5x20mm">Fuse holder</field>
+        <field name="Package ID">Through Hole, Horizontal</field>
+        <field name="Source">SPEC</field>
+        <field name="Manufacturer Name">Schurter</field>
+        <field name="Manufacturer Part Number">0031.8201</field>
+      </fields>
+      <libsource lib="device" part="F_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F1DD0D</tstamp>
+    </comp>
+    <comp ref="Fuse1">
+      <value>1A</value>
+      <datasheet>http://www.mouser.com/ds/2/358/typ_OGN-14523.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">1A, 250VAC, 5x20mm</field>
+        <field name="Description">Fuse</field>
+        <field name="Package ID">Through Hole, Horizontal</field>
+        <field name="Source">ANY</field>
+        <field name="Manufacturer Name">Schurter</field>
+        <field name="Manufacturer Part Number">0034.3117</field>
+      </fields>
+      <libsource lib="storage" part="Storage"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F1FADE</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>XBEE</value>
+      <footprint>My modules:XBEE-HEADER</footprint>
+      <libsource lib="modules_droids" part="XBEE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56F0FA20</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="AMS1117" part="AMS1117">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AMS1117</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="Vout" type="output"/>
+        <pin num="3" name="Vin" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistors" part="BC850">
+      <aliases>
+        <alias>BC849</alias>
+      </aliases>
+      <description>45V Vce, 0.1A Ic, Low noise, NPN, SOT-23</description>
+      <docs>http://www.fairchildsemi.com/ds/BC/BC850.pdf</docs>
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC850</field>
+        <field name="Footprint">SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X07">
+      <description>Connector 02x07</description>
+      <footprints>
+        <fp>Pin_Header_Straight_2X07</fp>
+        <fp>Pin_Header_Angled_2X07</fp>
+        <fp>Socket_Strip_Straight_2X07</fp>
+        <fp>Socket_Strip_Angled_2X07</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_02X07</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP1">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>SMD*_Pol</fp>
+        <fp>c_elec*</fp>
+        <fp>C*elec</fp>
+        <fp>TantalC*</fp>
+        <fp>Elko*</fp>
+        <fp>CP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-Pak_TO252AA</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="FUSE">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">FUSE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="F_Small">
+      <description>Fuse</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">F_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="powersupply" part="HLK-PM01">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">HLK-PM01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AC1" type="power_in"/>
+        <pin num="2" name="AC2" type="passive"/>
+        <pin num="3" name="DC+" type="power_out"/>
+        <pin num="4" name="DC-" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="INDUCTOR">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="JUMPER3">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">JUMPER3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Relays" part="RELAY_1RT">
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">RELAY_1RT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="T1" type="passive"/>
+        <pin num="2" name="C1" type="passive"/>
+        <pin num="3" name="R1" type="passive"/>
+        <pin num="4" name="4" type="input"/>
+        <pin num="5" name="5" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="storage" part="Storage">
+      <fields>
+        <field name="Reference">ST</field>
+        <field name="Value">Storage</field>
+      </fields>
+    </libpart>
+    <libpart lib="device" part="TVS">
+      <description>Transient voltage suppressor diode (bi-directional)</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">TVS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="modules_droids" part="XBEE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XBEE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcc" type="power_in"/>
+        <pin num="2" name="Dout" type="output"/>
+        <pin num="3" name="Din/Conf" type="input"/>
+        <pin num="4" name="Do8" type="output"/>
+        <pin num="5" name="/Rst" type="passive"/>
+        <pin num="6" name="PWM/RSSI" type="output"/>
+        <pin num="7" name="Nc0" type="passive"/>
+        <pin num="8" name="Nc1" type="passive"/>
+        <pin num="9" name="/DTR/Sleep_RQ/Di8" type="input"/>
+        <pin num="10" name="Gnd" type="power_in"/>
+        <pin num="11" name="AD4/Dio4" type="passive"/>
+        <pin num="12" name="/CTS/Dio7" type="passive"/>
+        <pin num="13" name="ON//Sleep" type="output"/>
+        <pin num="14" name="Vref" type="input"/>
+        <pin num="15" name="Asso/AD5/Dio5" type="passive"/>
+        <pin num="16" name="/RTS/AD6/Dio6" type="passive"/>
+        <pin num="17" name="AD3/Dio3" type="passive"/>
+        <pin num="18" name="AD2/Dio2" type="passive"/>
+        <pin num="19" name="AD1/Dio1" type="passive"/>
+        <pin num="20" name="AD0/Dio0" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="ZENER">
+      <description>Diode zener</description>
+      <footprints>
+        <fp>D?</fp>
+        <fp>SO*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">ZENER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Microprocessors" part="msp430i2041">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">msp430i2041</field>
+        <field name="Footprint">MODULE</field>
+        <field name="Datasheet">DOCUMENTATION</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0.0+" type="input"/>
+        <pin num="2" name="A0.0-" type="input"/>
+        <pin num="3" name="A1.0+" type="input"/>
+        <pin num="4" name="A1.0-" type="input"/>
+        <pin num="5" name="A2.0+" type="input"/>
+        <pin num="6" name="A2.0-" type="input"/>
+        <pin num="7" name="A3.0+" type="input"/>
+        <pin num="8" name="A3.0-" type="input"/>
+        <pin num="9" name="VREF" type="power_out"/>
+        <pin num="10" name="AVSS" type="power_in"/>
+        <pin num="11" name="ROSC" type="passive"/>
+        <pin num="12" name="DVSS" type="power_in"/>
+        <pin num="13" name="VCC" type="power_in"/>
+        <pin num="14" name="VCORE" type="output"/>
+        <pin num="15" name="RST/NMI/SBWTDIO" type="BiDi"/>
+        <pin num="16" name="TEST/SBWTCK" type="input"/>
+        <pin num="17" name="P1.0/UCA0STE/MCLK/TCK" type="BiDi"/>
+        <pin num="18" name="P1.1/UCA0CLK/SMCLK/TMS" type="BiDi"/>
+        <pin num="19" name="P1.2/UCA0RXD/UCA0SOMI/ACLK/TDI/TCLK" type="BiDi"/>
+        <pin num="20" name="P1.3/UCA0TXD/UCA0SIMO/TA0CLK/TDO/TDI" type="BiDi"/>
+        <pin num="21" name="P1.4/UCB0STE/TA0.0" type="BiDi"/>
+        <pin num="22" name="P1.5/UCB0CLK/TA0.1" type="BiDi"/>
+        <pin num="23" name="P1.6/UCB0SCL/UCB0SOMI/TA0.2" type="BiDi"/>
+        <pin num="24" name="P1.7/UCB0SDA/UCB0SIMO/TA1CLK" type="BiDi"/>
+        <pin num="25" name="P2.0/TA1.0/CLKIN" type="BiDi"/>
+        <pin num="26" name="P2.1/TA1.1" type="BiDi"/>
+        <pin num="27" name="P2.1/TA1.1" type="BiDi"/>
+        <pin num="28" name="P2.3/VMONIN" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="transistors">
+      <uri>/usr/share/kicad/library/transistors.lib</uri>
+    </library>
+    <library logical="Microprocessors">
+      <uri>/home/omn/Workspace/Hardware/lib/local/lib/Microprocessors.lib</uri>
+    </library>
+    <library logical="AMS1117">
+      <uri>/home/omn/Workspace/Hardware/lib/local/lib/AMS1117.lib</uri>
+    </library>
+    <library logical="Relays">
+      <uri>/home/omn/Workspace/Hardware/lib/local/lib/Relays.lib</uri>
+    </library>
+    <library logical="storage">
+      <uri>/home/omn/Workspace/Hardware/lib/local/lib/storage.lib</uri>
+    </library>
+    <library logical="modules_droids">
+      <uri>/home/omn/Workspace/Hardware/lib/local/lib/modules_droids.lib</uri>
+    </library>
+    <library logical="powersupply">
+      <uri>/home/omn/Workspace/Hardware/lib/local/lib/powersupply.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="NEUTRAL">
+      <node ref="R6" pin="1"/>
+      <node ref="U2" pin="10"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="F1" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="L1" pin="1"/>
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="2" name="Net-(L2-Pad2)">
+      <node ref="L2" pin="2"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="3" name="IN_P">
+      <node ref="R10" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C6" pin="2"/>
+    </net>
+    <net code="4" name="IN_N">
+      <node ref="C8" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="5" name="Net-(L1-Pad2)">
+      <node ref="L1" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="6" name="VIN_P">
+      <node ref="U2" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="7" name="VIN_N">
+      <node ref="C4" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="8" name="Net-(D2-Pad1)">
+      <node ref="R7" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="9" name="Net-(R3-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="10" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="11" name="LIVE">
+      <node ref="K1" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="F2" pin="1"/>
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="12" name="Net-(R20-Pad2)">
+      <node ref="U2" pin="27"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="13" name="SBWTCK">
+      <node ref="R16" pin="2"/>
+      <node ref="U2" pin="16"/>
+      <node ref="P2" pin="8"/>
+    </net>
+    <net code="14" name="TMS">
+      <node ref="U2" pin="18"/>
+      <node ref="R15" pin="1"/>
+      <node ref="R15" pin="2"/>
+      <node ref="P2" pin="5"/>
+    </net>
+    <net code="15" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="16" name="Net-(R24-Pad2)">
+      <node ref="R24" pin="2"/>
+      <node ref="U2" pin="23"/>
+    </net>
+    <net code="17" name="Net-(R23-Pad2)">
+      <node ref="R23" pin="2"/>
+      <node ref="U2" pin="24"/>
+    </net>
+    <net code="18" name="Net-(R22-Pad2)">
+      <node ref="R22" pin="2"/>
+      <node ref="U2" pin="25"/>
+    </net>
+    <net code="19" name="Net-(R21-Pad2)">
+      <node ref="R21" pin="2"/>
+      <node ref="U2" pin="26"/>
+    </net>
+    <net code="20" name="Net-(R19-Pad2)">
+      <node ref="R19" pin="2"/>
+      <node ref="U2" pin="28"/>
+    </net>
+    <net code="21" name="Net-(C14-Pad1)">
+      <node ref="C14" pin="1"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="22" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="23" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="L2" pin="1"/>
+    </net>
+    <net code="24" name="GNDD">
+      <node ref="C1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U2" pin="12"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="P2" pin="9"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="P1" pin="4"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="25" name="VCC">
+      <node ref="R18" pin="2"/>
+      <node ref="LED3" pin="2"/>
+      <node ref="U2" pin="13"/>
+      <node ref="LED2" pin="2"/>
+      <node ref="LED1" pin="2"/>
+      <node ref="LED4" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R24" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="26" name="CTRL1">
+      <node ref="U2" pin="21"/>
+      <node ref="U3" pin="19"/>
+    </net>
+    <net code="27" name="RELAY">
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="22"/>
+      <node ref="U3" pin="17"/>
+    </net>
+    <net code="28" name="Net-(U3-Pad16)">
+      <node ref="U3" pin="16"/>
+    </net>
+    <net code="29" name="Net-(U3-Pad15)">
+      <node ref="U3" pin="15"/>
+    </net>
+    <net code="30" name="Net-(U3-Pad14)">
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="31" name="Net-(U3-Pad13)">
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="32" name="Net-(U3-Pad12)">
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="33" name="Net-(U3-Pad11)">
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="34" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="35" name="Net-(U3-Pad8)">
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="36" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="37" name="Net-(U3-Pad6)">
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="38" name="Net-(U3-Pad5)">
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="39" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="40" name="Net-(F1-Pad2)">
+      <node ref="F1" pin="2"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="41" name="CTRL2">
+      <node ref="U2" pin="17"/>
+      <node ref="U3" pin="18"/>
+    </net>
+    <net code="42" name="SBWTDIO">
+      <node ref="R18" pin="1"/>
+      <node ref="U3" pin="20"/>
+      <node ref="C15" pin="1"/>
+      <node ref="R13" pin="2"/>
+      <node ref="U2" pin="15"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="43" name="/V_Sense">
+      <node ref="P2" pin="4"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="44" name="/V_Tool">
+      <node ref="P2" pin="2"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="45" name="Net-(P2-Pad3)">
+      <node ref="P2" pin="3"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="46" name="RXD">
+      <node ref="R14" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="47" name="Net-(P2-Pad1)">
+      <node ref="R13" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="48" name="TDO">
+      <node ref="U2" pin="20"/>
+      <node ref="R12" pin="2"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="49" name="5V">
+      <node ref="D1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P1" pin="3"/>
+      <node ref="K1" pin="4"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C2" pin="1"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="50" name="LIVE_OUT">
+      <node ref="F2" pin="2"/>
+      <node ref="K1" pin="1"/>
+    </net>
+    <net code="51" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="K1" pin="5"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="52" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="53" name="Net-(P2-Pad14)">
+      <node ref="P2" pin="14"/>
+    </net>
+    <net code="54" name="Net-(P2-Pad13)">
+      <node ref="P2" pin="13"/>
+    </net>
+    <net code="55" name="Net-(P2-Pad12)">
+      <node ref="P2" pin="12"/>
+    </net>
+    <net code="56" name="Net-(P2-Pad10)">
+      <node ref="P2" pin="10"/>
+    </net>
+    <net code="57" name="Net-(P2-Pad6)">
+      <node ref="P2" pin="6"/>
+    </net>
+    <net code="58" name="Net-(LED1-Pad1)">
+      <node ref="R19" pin="1"/>
+      <node ref="LED1" pin="1"/>
+    </net>
+    <net code="59" name="Net-(LED4-Pad1)">
+      <node ref="R22" pin="1"/>
+      <node ref="LED4" pin="1"/>
+    </net>
+    <net code="60" name="Net-(LED2-Pad1)">
+      <node ref="LED2" pin="1"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="61" name="Net-(LED3-Pad1)">
+      <node ref="R21" pin="1"/>
+      <node ref="LED3" pin="1"/>
+    </net>
+    <net code="62" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="63" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="64" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="65" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="66" name="/TCK">
+      <node ref="P2" pin="7"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="67" name="/RST">
+      <node ref="R17" pin="1"/>
+      <node ref="P2" pin="11"/>
+    </net>
+    <net code="68" name="Net-(K1-Pad3)">
+      <node ref="K1" pin="3"/>
+    </net>
+  </nets>
+</export>

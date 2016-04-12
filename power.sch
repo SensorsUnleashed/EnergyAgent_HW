@@ -1,0 +1,1640 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:powersupply
+LIBS:AMS1117
+LIBS:Relays
+LIBS:Microprocessors
+LIBS:storage
+LIBS:modules_droids
+LIBS:Resistors
+LIBS:power-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Power Meter"
+Date "2016-03-11"
+Rev ""
+Comp ""
+Comment1 "Single Phase"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6700 950  0    60   Input ~ 0
+VIN_P
+Text GLabel 6700 1150 0    60   Input ~ 0
+VIN_N
+Text GLabel 6650 1350 0    60   Input ~ 0
+IN_P
+Text GLabel 6650 1550 0    60   Input ~ 0
+IN_N
+$Comp
+L C C10
+U 1 1 56E27700
+P 6150 2750
+F 0 "C10" H 6175 2850 50  0000 L CNN
+F 1 "100nF" H 5900 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6188 2600 50  0001 C CNN
+F 3 "" H 6150 2750 50  0000 C CNN
+F 4 "CERM, 10V, +/-10%, X5R" H 6150 2750 60  0001 C CNN "Characteristics"
+F 5 "0805" H 6150 2750 60  0001 C CNN "Package ID"
+F 6 "ANY" H 6150 2750 60  0001 C CNN "Source"
+	1    6150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR01
+U 1 1 56E27745
+P 6150 3550
+F 0 "#PWR01" H 6150 3300 50  0001 C CNN
+F 1 "GNDA" H 6150 3400 50  0000 C CNN
+F 2 "" H 6150 3550 50  0000 C CNN
+F 3 "" H 6150 3550 50  0000 C CNN
+	1    6150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 56E2776F
+P 6650 2950
+F 0 "R11" V 6730 2950 50  0000 C CNN
+F 1 "NM" V 6650 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6580 2950 50  0001 C CNN
+F 3 "" H 6650 2950 50  0000 C CNN
+	1    6650 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR02
+U 1 1 56E2835A
+P 6550 3200
+F 0 "#PWR02" H 6550 2950 50  0001 C CNN
+F 1 "GNDD" H 6550 3050 50  0000 C CNN
+F 2 "" H 6550 3200 50  0000 C CNN
+F 3 "" H 6550 3200 50  0000 C CNN
+	1    6550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C13
+U 1 1 56E2934C
+P 5400 1200
+F 0 "C13" H 5425 1300 50  0000 L CNN
+F 1 "10uF" H 5425 1100 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeT_EIA-3528" H 5400 1200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/40002/293d.pdf" H 5400 1200 50  0001 C CNN
+F 4 "TANT, 10V, +/-20%, 2.5 ohm" H 5400 1200 60  0001 C CNN "Characteristics"
+F 5 "3528-21" H 5400 1200 60  0001 C CNN "Package ID"
+F 6 "ANY" H 5400 1200 60  0001 C CNN "Source"
+F 7 "Vishay Sprague" H 5400 1200 60  0001 C CNN "Manufacturer Name"
+F 8 "293D106X0010B2TE3" H 5400 1200 60  0001 C CNN "Manufacturer Part Number"
+	1    5400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 56E295AB
+P 6750 3700
+F 0 "C14" H 6775 3800 50  0000 L CNN
+F 1 "470nF" H 6775 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6788 3550 50  0001 C CNN
+F 3 "" H 6750 3700 50  0000 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR03
+U 1 1 56E29626
+P 6750 3850
+F 0 "#PWR03" H 6750 3600 50  0001 C CNN
+F 1 "GNDD" H 6750 3700 50  0000 C CNN
+F 2 "" H 6750 3850 50  0000 C CNN
+F 3 "" H 6750 3850 50  0000 C CNN
+	1    6750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 56E29EA5
+P 10300 1750
+F 0 "R23" V 10380 1750 50  0000 C CNN
+F 1 "1.5k" V 10300 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10230 1750 50  0001 C CNN
+F 3 "" H 10300 1750 50  0000 C CNN
+F 4 "0805" H 10300 1750 60  0001 C CNN "Package ID"
+F 5 "ANY" H 10300 1750 60  0001 C CNN "Source"
+	1    10300 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R24
+U 1 1 56E29F57
+P 10300 1950
+F 0 "R24" V 10380 1950 50  0000 C CNN
+F 1 "1.5k" V 10300 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10230 1950 50  0001 C CNN
+F 3 "" H 10300 1950 50  0000 C CNN
+F 4 "0805" H 10300 1950 60  0001 C CNN "Package ID"
+F 5 "ANY" H 10300 1950 60  0001 C CNN "Source"
+	1    10300 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 56E29FA6
+P 11100 700
+F 0 "#PWR04" H 11100 550 50  0001 C CNN
+F 1 "VCC" H 11100 850 50  0000 C CNN
+F 2 "" H 11100 700 50  0000 C CNN
+F 3 "" H 11100 700 50  0000 C CNN
+	1    11100 700 
+	1    0    0    -1  
+$EndComp
+Text GLabel 10350 2550 2    60   Output ~ 0
+TXD
+Text GLabel 10350 2750 2    60   Input ~ 0
+RXD
+Text GLabel 10350 2950 2    60   Input ~ 0
+TMS
+Text GLabel 10350 3350 2    60   Input ~ 0
+SBWTCK
+Text GLabel 10350 3550 2    60   Input ~ 0
+SBWTDIO
+Text GLabel 10350 3750 2    60   Input ~ 0
+TDI
+Text GLabel 10350 3950 2    60   Input ~ 0
+TDO
+NoConn ~ 6900 1750
+NoConn ~ 6900 1950
+NoConn ~ 6900 2150
+NoConn ~ 6900 2350
+$Comp
+L R R18
+U 1 1 56E2AC94
+P 9800 4000
+F 0 "R18" V 9880 4000 50  0000 C CNN
+F 1 "47k" V 9800 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9730 4000 50  0001 C CNN
+F 3 "" H 9800 4000 50  0000 C CNN
+F 4 "5%, 0.063W" H 9800 4000 60  0001 C CNN "Characteristics"
+F 5 "0805" H 9800 4000 60  0001 C CNN "Package ID"
+F 6 "ANY" H 9800 4000 60  0001 C CNN "Source"
+	1    9800 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L C C15
+U 1 1 56E2AD3F
+P 10050 4250
+F 0 "C15" H 10075 4350 50  0000 L CNN
+F 1 "2.2nF" H 10075 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10088 4100 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 10050 4250 50  0001 C CNN
+F 4 "CERM, 25V, +/-10%, X7R" H 10050 4250 60  0001 C CNN "Characteristics"
+F 5 "0805" H 10050 4250 60  0001 C CNN "Package ID"
+F 6 "ANY" H 10050 4250 60  0001 C CNN "Source"
+F 7 "AVX Corporation" H 10050 4250 60  0001 C CNN "Manufacturer Name"
+F 8 "0805ZC222JAT2A" H 10050 4250 60  0001 C CNN "Manufacturer Part Number"
+	1    10050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 56E2AE8B
+P 9550 3950
+F 0 "#PWR05" H 9550 3800 50  0001 C CNN
+F 1 "VCC" H 9550 4100 50  0000 C CNN
+F 2 "" H 9550 3950 50  0000 C CNN
+F 3 "" H 9550 3950 50  0000 C CNN
+	1    9550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR06
+U 1 1 56E2AEEF
+P 10050 4400
+F 0 "#PWR06" H 10050 4150 50  0001 C CNN
+F 1 "GNDD" H 10050 4250 50  0000 C CNN
+F 2 "" H 10050 4400 50  0000 C CNN
+F 3 "" H 10050 4400 50  0000 C CNN
+	1    10050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED LED3
+U 1 1 56E2B150
+P 10650 1350
+F 0 "LED3" H 10650 1450 50  0000 C CNN
+F 1 "LED" H 10650 1250 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 10650 1350 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0226/S_110_LTST-C170TBKT.pdf" H 10650 1350 50  0001 C CNN
+F 4 "BLUE, CLEAR" H 10650 1350 60  0001 C CNN "Characteristics"
+F 5 "Blue" H 10950 1400 60  0000 C CNN "Description"
+F 6 "0805" H 10650 1350 60  0001 C CNN "Package ID"
+F 7 "ANY" H 10650 1350 60  0001 C CNN "Source"
+F 8 "Lite-On Inc." H 10650 1350 60  0001 C CNN "Manufacturer Name"
+F 9 "LTST-C170TBKT" H 10650 1350 60  0001 C CNN "Manufacturer Part Number"
+	1    10650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 56E2B3F1
+P 10300 950
+F 0 "R19" V 10380 950 50  0000 C CNN
+F 1 "390" V 10300 950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10230 950 50  0001 C CNN
+F 3 "" H 10300 950 50  0000 C CNN
+F 4 "5%, 0.125W" H 10300 950 60  0001 C CNN "Characteristics"
+F 5 "0805" H 10300 950 60  0001 C CNN "Package ID"
+F 6 "ANY" H 10300 950 60  0001 C CNN "Source"
+F 7 "Panasonic Electronic Components" H 10300 950 60  0001 C CNN "Manufacturer Name"
+F 8 "ERJ-6GEYJ391V" H 10300 950 60  0001 C CNN "Manufacturer Part Number"
+	1    10300 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L LED LED2
+U 1 1 56E2B4A4
+P 10650 1150
+F 0 "LED2" H 10650 1250 50  0000 C CNN
+F 1 "LED" H 10650 1050 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 10650 1150 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-075/S_110_LTST-S220KGKT.pdf" H 10650 1150 50  0001 C CNN
+F 4 "GREEN,CLEAR" H 10650 1150 60  0001 C CNN "Characteristics"
+F 5 "Green" H 10950 1200 60  0000 C CNN "Description"
+F 6 "0805" H 10650 1150 60  0001 C CNN "Package ID"
+F 7 "ANY" H 10650 1150 60  0001 C CNN "Source"
+F 8 "Lite-On Inc." H 10650 1150 60  0001 C CNN "Manufacturer Name"
+F 9 "LTST-S220KGKT" H 10650 1150 60  0001 C CNN "Manufacturer Part Number"
+	1    10650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED LED1
+U 1 1 56E2B4E8
+P 10650 950
+F 0 "LED1" H 10650 1050 50  0000 C CNN
+F 1 "LED" H 10650 850 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 10650 950 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-99-0150/S_110_LTST-C170KRKT.pdf" H 10650 950 50  0001 C CNN
+F 4 "RED, CLEAR" H 10650 950 60  0001 C CNN "Characteristics"
+F 5 "Red" H 10950 1000 60  0000 C CNN "Description"
+F 6 "0805" H 10650 950 60  0001 C CNN "Package ID"
+F 7 "ANY" H 10650 950 60  0001 C CNN "Source"
+F 8 "Lite-On Inc." H 10650 950 60  0001 C CNN "Manufacturer Name"
+F 9 "LTST-C170KRKT" H 10650 950 60  0001 C CNN "Manufacturer Part Number"
+	1    10650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED LED4
+U 1 1 56E2B52F
+P 10650 1550
+F 0 "LED4" H 10650 1650 50  0000 C CNN
+F 1 "LED4" H 10650 1450 50  0001 C CNN
+F 2 "LEDs:LED_0805" H 10650 1550 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2004-078/S_110_LTW-170TK.pdf" H 10650 1550 50  0001 C CNN
+F 4 "WHITE" H 10650 1550 60  0001 C CNN "Characteristics"
+F 5 "White" H 10950 1600 60  0000 C CNN "Description"
+F 6 "0805" H 10650 1550 60  0001 C CNN "Package ID"
+F 7 "ANY" H 10650 1550 60  0001 C CNN "Source"
+F 8 "Lite-On Inc." H 10650 1550 60  0001 C CNN "Manufacturer Name"
+F 9 "LTW-170TK" H 10650 1550 60  0001 C CNN "Manufacturer Part Number"
+	1    10650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56E2DC6D
+P 1550 5050
+F 0 "R3" V 1630 5050 50  0000 C CNN
+F 1 "330k" V 1450 5050 50  0000 C TNN
+F 2 "Resistors_SMD:R_2010" V 1480 5050 50  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0005+ERJS1DF3303U+7+WW" H 1550 5050 50  0001 C CNN
+F 4 "1%, 1W" H 1550 5050 60  0001 C CNN "Characteristics"
+F 5 "2010M" H 1550 5050 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1550 5050 60  0001 C CNN "Source"
+F 7 "Panasonic Electronic Components " H 1550 5050 60  0001 C CNN "Manufacturer Name"
+F 8 " ERJ-S1DF3303U" H 1550 5050 60  0001 C CNN "Manufacturer Part Number"
+	1    1550 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56E2E4F7
+P 1400 6600
+F 0 "R2" V 1480 6600 50  0000 C CNN
+F 1 "0.5m" V 1400 6600 50  0000 C CNN
+F 2 "My modules:R_2512_current_sense_4_wire" V 1330 6600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/414/ULR-471180.pdf" H 1400 6600 50  0001 C CNN
+F 4 "1W, 1%" H 1400 6600 60  0001 C CNN "Characteristics"
+F 5 "Shunt Resistor" H 1400 6600 60  0001 C CNN "Description"
+F 6 "2512" H 1400 6600 60  0001 C CNN "Package ID"
+F 7 "SPEC" H 1400 6600 60  0001 C CNN "Source"
+F 8 "X" H 1400 6600 60  0001 C CNN "Critical"
+F 9 "INTERNATIONAL RESISTIVE" H 1400 6600 60  0001 C CNN "Manufacturer Name"
+F 10 "ULRB12512R0005FLFSLT" H 1400 6600 60  0001 C CNN "Manufacturer Part Number"
+	1    1400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TVS D2
+U 1 1 56E2DE46
+P 2750 5500
+F 0 "D2" H 2750 5650 50  0000 C CNN
+F 1 "SMAJ5.0CA" H 2750 5350 50  0000 C CNN
+F 2 "Diodes_SMD:SMA_Standard" H 2750 5500 50  0001 C CNN
+F 3 "http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf" H 2750 5500 50  0001 C CNN
+F 4 "TVS DIODE 5VWM 9.2VC SMA " H 2750 5500 60  0001 C CNN "Description"
+F 5 "DO-214AC" H 2750 5500 60  0001 C CNN "Package ID"
+F 6 "SPEC" H 2750 5500 60  0001 C CNN "Source"
+F 7 "Littelfuse Inc." H 2750 5500 60  0001 C CNN "Manufacturer Name"
+F 8 "SMAJ5.0CA " H 2750 5500 60  0001 C CNN "Manufacturer Part Number"
+	1    2750 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR07
+U 1 1 56E2E8DE
+P 2100 6400
+F 0 "#PWR07" H 2100 6150 50  0001 C CNN
+F 1 "GNDA" H 2100 6250 50  0000 C CNN
+F 2 "" H 2100 6400 50  0000 C CNN
+F 3 "" H 2100 6400 50  0000 C CNN
+	1    2100 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 56E2E9B1
+P 3950 5050
+F 0 "R7" V 4030 5050 50  0000 C CNN
+F 1 "100" V 3850 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 5050 50  0001 C CNN
+F 3 "" H 3950 5050 50  0000 C CNN
+F 4 "1%, 0.063W" H 3950 5050 60  0001 C CNN "Characteristics"
+F 5 "0805" H 3950 5050 60  0001 C CNN "Package ID"
+F 6 "ANY" H 3950 5050 60  0001 C CNN "Source"
+	1    3950 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 56E2EA83
+P 3950 6000
+F 0 "R8" V 4030 6000 50  0000 C CNN
+F 1 "1.00k" V 3950 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 6000 50  0001 C CNN
+F 3 "" H 3950 6000 50  0000 C CNN
+F 4 "1%, 0.063W" H 3950 6000 60  0001 C CNN "Characteristics"
+F 5 "0805" H 3950 6000 60  0001 C CNN "Package ID"
+F 6 "ANY" H 3950 6000 60  0001 C CNN "Source"
+	1    3950 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 56E3043C
+P 3350 6300
+F 0 "L1" V 3300 6300 50  0000 C CNN
+F 1 "INDUCTOR" V 3450 6300 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 3350 6300 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0110S0100BLM21B.pdf" H 3350 6300 50  0001 C CNN
+F 4 "120 Ohm @ 100MHz " H 3350 6300 60  0001 C CNN "Characteristics"
+F 5 "Chip Ferrite Bead" H 3350 6300 60  0001 C CNN "Description"
+F 6 "0805" H 3350 6300 60  0001 C CNN "Package ID"
+F 7 "SPEC" H 3350 6300 60  0001 C CNN "Source"
+F 8 "Murata Electronics North America" H 3350 6300 60  0001 C CNN "Manufacturer Name"
+F 9 "BLM21BD121SN1D" H 3350 6300 60  0001 C CNN "Manufacturer Part Number"
+	1    3350 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 56E3106D
+P 4350 5250
+F 0 "C3" H 4375 5350 50  0000 L CNN
+F 1 "47pF" H 4375 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4388 5100 50  0001 C CNN
+F 3 "" H 4350 5250 50  0000 C CNN
+F 4 "CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0" H 4350 5250 60  0001 C CNN "Characteristics"
+F 5 "0805" H 4350 5250 60  0001 C CNN "Package ID"
+F 6 "ANY" H 4350 5250 60  0001 C CNN "Source"
+	1    4350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 56E3124A
+P 3100 5500
+F 0 "R6" V 3180 5500 50  0000 C CNN
+F 1 "1.5k" V 3000 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_2010" V 3030 5500 50  0001 C CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr.pdf" H 3100 5500 50  0001 C CNN
+F 4 "1%, 1W" H 3100 5500 60  0001 C CNN "Characteristics"
+F 5 "2010M" H 3100 5500 60  0001 C CNN "Package ID"
+F 6 "ANY" H 3100 5500 60  0001 C CNN "Source"
+F 7 "Rohm Semiconductor" H 3100 5500 60  0001 C CNN "Manufacturer Name"
+F 8 "MCR50JZHF1501" H 3100 5500 60  0001 C CNN "Manufacturer Part Number"
+	1    3100 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDA #PWR08
+U 1 1 56E31673
+P 4150 5500
+F 0 "#PWR08" H 4150 5250 50  0001 C CNN
+F 1 "GNDA" H 4150 5350 50  0000 C CNN
+F 2 "" H 4150 5500 50  0000 C CNN
+F 3 "" H 4150 5500 50  0000 C CNN
+	1    4150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR09
+U 1 1 56E31E49
+P 4050 6750
+F 0 "#PWR09" H 4050 6500 50  0001 C CNN
+F 1 "GNDA" H 4050 6600 50  0000 C CNN
+F 2 "" H 4050 6750 50  0000 C CNN
+F 3 "" H 4050 6750 50  0000 C CNN
+	1    4050 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 7300 2    60   Output ~ 0
+IN_P
+Text GLabel 5150 6300 2    60   Output ~ 0
+IN_N
+$Comp
+L C C7
+U 1 1 56E3492A
+P 4850 5500
+F 0 "C7" H 4875 5600 50  0000 L CNN
+F 1 "15pF" H 4875 5400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4888 5350 50  0001 C CNN
+F 3 "" H 4850 5500 50  0000 C CNN
+F 4 "CAP, CERM, 50V, +/-10%, X7R" H 4850 5500 60  0001 C CNN "Description"
+F 5 "0805" H 4850 5500 60  0001 C CNN "Package ID"
+F 6 "ANY" H 4850 5500 60  0001 C CNN "Source"
+	1    4850 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 5050 2    60   Output ~ 0
+VIN_P
+Text GLabel 5150 6000 2    60   Output ~ 0
+VIN_N
+Text GLabel 1000 1350 0    60   Input ~ 0
+LIVE
+Text GLabel 1200 6350 0    60   Output ~ 0
+NEUTRAL
+Text GLabel 1000 1050 0    60   Input ~ 0
+NEUTRAL
+$Comp
+L CP1 C1
+U 1 1 56E34DF8
+P 3650 1200
+F 0 "C1" H 3675 1300 50  0000 L CNN
+F 1 "22uF/10V" H 3500 1050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3650 1200 50  0001 C CNN
+F 3 "" H 3650 1200 50  0000 C CNN
+F 4 "Tantalum capacitor" H 3650 1200 60  0001 C CNN "Comment"
+	1    3650 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 600  2    60   Output ~ 0
+5V
+$Comp
+L ZENER D4
+U 1 1 56E35E76
+P 3400 1200
+F 0 "D4" H 3400 1300 50  0000 C CNN
+F 1 "7V" H 3400 1100 50  0000 C CNN
+F 2 "Diodes_SMD:SMB_Standard" H 3400 1200 50  0001 C CNN
+F 3 "/home/omn/Workspace/Hardware/powermeasurement/Datablade/SMBJ5.0_TVSDiode.pdf" H 3400 1200 50  0001 C CNN
+F 4 "SMB" H 3400 1200 60  0001 C CNN "Package ID"
+F 5 "ANY" H 3400 1200 60  0001 C CNN "Source"
+F 6 "Optional" H 3400 1200 60  0001 C CNN "Notes"
+F 7 "Diodes Incorporated" H 3400 1200 60  0001 C CNN "Manufacturer Name"
+F 8 " SMBJ7.0A-FDICT-ND " H 3400 1200 60  0001 C CNN "Manufacturer Part Number"
+	1    3400 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L HLK-PM01 P1
+U 1 1 56E30194
+P 2400 1200
+F 0 "P1" H 2000 1500 60  0000 C CNN
+F 1 "HLK-PM01" H 2200 900 60  0000 C CNN
+F 2 "powermodule:HLK-PM01" H 2400 1200 60  0001 C CNN
+F 3 "" H 2400 1200 60  0000 C CNN
+	1    2400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L AMS1117 U1
+U 1 1 56E394BA
+P 4550 850
+F 0 "U1" H 4300 700 50  0000 C CNN
+F 1 "AMS1117" H 4450 1100 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 4550 850 60  0001 C CNN
+F 3 "" H 4550 850 60  0000 C CNN
+	1    4550 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X07 P2
+U 1 1 56E3DE85
+P 2500 2800
+F 0 "P2" H 2500 3200 50  0000 C CNN
+F 1 "1x3" V 2500 2800 50  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_14pins" H 2500 1600 50  0001 C CNN
+F 3 "http://media.digikey.com/pdf/Data%20Sheets/Tyco%20Electonics%20AMP%20PDFs/x-1634688-x_Dwg.pdf" H 2500 1600 50  0001 C CNN
+F 4 "14 pins" H 2500 2800 60  0001 C CNN "Characteristics"
+F 5 "CONN HEADER 14POS .100 VERT GOLD " H 2500 2800 60  0001 C CNN "Description"
+F 6 "2X7BOXHEADER" H 2500 2800 60  0001 C CNN "Package ID"
+F 7 "ANY" H 2500 2800 60  0001 C CNN "Source"
+F 8 "TE Connectivity AMP Connectors " H 2500 2800 60  0001 C CNN "Manufacturer Name"
+F 9 "1-1634688-4" H 2500 2800 60  0001 C CNN "Manufacturer Part Number"
+	1    2500 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 2350 0    60   Input ~ 0
+TDO
+$Comp
+L R R12
+U 1 1 56E3EA3B
+P 1550 2350
+F 0 "R12" V 1630 2350 50  0000 C CNN
+F 1 "NM" V 1550 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1480 2350 50  0001 C CNN
+F 3 "" H 1550 2350 50  0000 C CNN
+F 4 "0805" H 1550 2350 60  0001 C CNN "Package ID"
+F 5 "ANY" H 1550 2350 60  0001 C CNN "Source"
+F 6 "Used only if JTAG should be used" H 1550 2350 60  0001 C CNN "Notes"
+	1    1550 2350
+	0    1    1    0   
+$EndComp
+Text GLabel 1250 2500 0    60   Input ~ 0
+SBWTDIO
+$Comp
+L R R13
+U 1 1 56E3F5FF
+P 1550 2500
+F 0 "R13" V 1630 2500 50  0000 C CNN
+F 1 "0" V 1550 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1480 2500 50  0001 C CNN
+F 3 "" H 1550 2500 50  0000 C CNN
+F 4 "0805" H 1550 2500 60  0001 C CNN "Package ID"
+F 5 "ANY" H 1550 2500 60  0001 C CNN "Source"
+	1    1550 2500
+	0    1    1    0   
+$EndComp
+Text GLabel 1250 2650 0    60   Input ~ 0
+TDI
+Text GLabel 1250 2800 0    60   Input ~ 0
+TMS
+Text GLabel 1250 2950 0    60   Input ~ 0
+SBWTCK
+$Comp
+L R R16
+U 1 1 56E41475
+P 1550 2950
+F 0 "R16" V 1630 2950 50  0000 C CNN
+F 1 "330" V 1550 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1480 2950 50  0001 C CNN
+F 3 "" H 1550 2950 50  0000 C CNN
+F 4 "0805" H 1550 2950 60  0001 C CNN "Package ID"
+F 5 "ANY" H 1550 2950 60  0001 C CNN "Source"
+	1    1550 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR010
+U 1 1 56E41E39
+P 2150 2900
+F 0 "#PWR010" H 2150 2650 50  0001 C CNN
+F 1 "GNDD" H 2150 2750 50  0001 C CNN
+F 2 "" H 2150 2900 50  0001 C CNN
+F 3 "" H 2150 2900 50  0001 C CNN
+	1    2150 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 3100 0    60   Input ~ 0
+SBWTDIO
+NoConn ~ 2250 3100
+NoConn ~ 2750 3100
+NoConn ~ 2750 3000
+NoConn ~ 2750 2700
+Text GLabel 3100 2800 2    60   Input ~ 0
+SBWTCK
+$Comp
+L JUMPER3 J2
+U 1 1 56E52EC4
+P 3300 2250
+F 0 "J2" H 3350 2150 50  0000 L CNN
+F 1 "JUMPER3" H 3300 2350 50  0001 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 3300 2250 50  0001 C CNN
+F 3 "http://www.sullinscorp.com/catalogs/77_PAGE108-109_.100_MALE_HDR.pdf" H 3300 2250 50  0001 C CNN
+F 4 "CONN HEADER .100 SINGL STR 3POS" H 3300 2250 60  0001 C CNN "Description"
+F 5 "PBC03SAAN" H 3300 2250 60  0001 C CNN "Package ID"
+F 6 "ANY" H 3300 2250 60  0001 C CNN "Source"
+F 7 "Sullins Connector Solutions" H 3300 2250 60  0001 C CNN "Manufacturer Name"
+F 8 "S1011E-03-ND " H 3300 2250 60  0001 C CNN "Manufacturer Part Number"
+	1    3300 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 56E53183
+P 3300 2100
+F 0 "#PWR011" H 3300 1950 50  0001 C CNN
+F 1 "VCC" H 3300 2250 50  0000 C CNN
+F 2 "" H 3300 2100 50  0000 C CNN
+F 3 "" H 3300 2100 50  0000 C CNN
+	1    3300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR012
+U 1 1 56E5D839
+P 4500 1700
+F 0 "#PWR012" H 4500 1450 50  0001 C CNN
+F 1 "GNDD" H 4500 1550 50  0001 C CNN
+F 2 "" H 4500 1700 50  0000 C CNN
+F 3 "" H 4500 1700 50  0000 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 3600 0    60   Input ~ 0
+5V
+Text GLabel 3800 3400 0    60   Input ~ 0
+LIVE
+$Comp
+L BC849 Q1
+U 1 1 56E6ABD2
+P 4100 4250
+F 0 "Q1" H 4300 4325 50  0000 L CNN
+F 1 "BC849" H 4300 4250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4300 4175 50  0001 L CIN
+F 3 "/home/omn/Workspace/Hardware/powermeasurement/Datablade/BC849_BC850.pdf" H 4100 4250 50  0001 L CNN
+F 4 "SOT-23" H 4100 4250 60  0001 C CNN "Package ID"
+	1    4100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 56E6AE3F
+P 3700 4250
+F 0 "R1" V 3780 4250 50  0000 C CNN
+F 1 "1k" V 3700 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3630 4250 50  0001 C CNN
+F 3 "" H 3700 4250 50  0000 C CNN
+F 4 "10%" H 3700 4250 60  0001 C CNN "Characteristics"
+F 5 "0805" H 3700 4250 60  0001 C CNN "Package ID"
+F 6 "ANY" H 3700 4250 60  0001 C CNN "Source"
+	1    3700 4250
+	0    1    1    0   
+$EndComp
+Text GLabel 10350 2150 2    60   Output ~ 0
+RELAY
+Text GLabel 3450 4250 0    60   Input ~ 0
+RELAY
+$Comp
+L GNDD #PWR013
+U 1 1 56E6CF00
+P 4200 4600
+F 0 "#PWR013" H 4200 4350 50  0001 C CNN
+F 1 "GNDD" H 4200 4450 50  0001 C CNN
+F 2 "" H 4200 4600 50  0000 C CNN
+F 3 "" H 4200 4600 50  0000 C CNN
+	1    4200 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 3300
+$Comp
+L D D1
+U 1 1 56E746F4
+P 4000 3800
+F 0 "D1" H 4000 3900 50  0000 C CNN
+F 1 "BAS32" H 4000 3700 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-323" H 4000 3800 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/BAS321.pdf" H 4000 3800 50  0001 C CNN
+F 4 "200V, 250MA" H 4000 3800 60  0001 C CNN "Characteristics"
+F 5 "DIODE GEN PURP" H 4000 3800 60  0001 C CNN "Description"
+F 6 "SOD-323" H 4000 3800 60  0001 C CNN "Package ID"
+F 7 "ANY" H 4000 3800 60  0001 C CNN "Source"
+F 8 "NXP Semiconductors" H 4000 3800 60  0001 C CNN "Manufacturer Name"
+F 9 "BAS321,115 " H 4000 3800 60  0001 C CNN "Manufacturer Part Number"
+	1    4000 3800
+	0    1    1    0   
+$EndComp
+Text GLabel 5200 3500 2    60   Output ~ 0
+LIVE_OUT
+Text GLabel 1450 4700 2    60   Input ~ 0
+LIVE_OUT
+Text GLabel 1200 5450 0    60   Output ~ 0
+LIVE
+$Comp
+L RELAY_1RT K1
+U 1 1 56E9B4FE
+P 4600 3550
+F 0 "K1" H 4550 3900 50  0000 C CNN
+F 1 "RELAY_1RT" H 4750 3250 50  0000 C CNN
+F 2 "My modules:Relay_SRD_XVDC-SL-C_SeriesPin4-5Swap" H 4600 3750 50  0001 C CNN
+F 3 "/home/omn/Workspace/Hardware/powermeasurement/Datablade/Relay_SRD-0XVDC-SL-C.pdf" H 4600 3750 50  0001 C CNN
+F 4 "5V, 10A, SRD" H 4600 3550 60  0001 C CNN "Characteristics"
+F 5 "SPEC" H 4600 3550 60  0001 C CNN "Source"
+F 6 "SONGLE" H 4600 3550 60  0001 C CNN "Manufacturer Name"
+F 7 "SRD-5VDC-SL-C" H 4600 3550 60  0001 C CNN "Manufacturer Part Number"
+	1    4600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L msp430i2041 U2
+U 1 1 56E9F10A
+P 8450 2100
+F 0 "U2" H 7250 3500 50  0000 C CNN
+F 1 "msp430i2041" H 9400 3500 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-28_4.4x9.7mm_Pitch0.65mm" H 9550 400 50  0001 C CNN
+F 3 "/home/omn/Workspace/Hardware/powermeasurement/Datablade/msp430i2041.pdf" H 7500 400 50  0001 C CNN
+	1    8450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 56ED15C1
+P 3900 1200
+F 0 "C2" H 3925 1300 50  0000 L CNN
+F 1 "100nF" H 3925 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3938 1050 50  0001 C CNN
+F 3 "" H 3900 1200 50  0000 C CNN
+	1    3900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56EE8EA8
+P 1950 5050
+F 0 "R4" V 2030 5050 50  0000 C CNN
+F 1 "330k" V 1850 5050 50  0000 C TNN
+F 2 "Resistors_SMD:R_2010" V 1880 5050 50  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0005+ERJS1DF3303U+7+WW" H 1950 5050 50  0001 C CNN
+F 4 "1%, 1W" H 1950 5050 60  0001 C CNN "Characteristics"
+F 5 "2010M" H 1950 5050 60  0001 C CNN "Package ID"
+F 6 "ANY" H 1950 5050 60  0001 C CNN "Source"
+F 7 "Panasonic Electronic Components " H 1950 5050 60  0001 C CNN "Manufacturer Name"
+F 8 " ERJ-S1DF3303U" H 1950 5050 60  0001 C CNN "Manufacturer Part Number"
+	1    1950 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 56EE8F81
+P 2350 5050
+F 0 "R5" V 2430 5050 50  0000 C CNN
+F 1 "330k" V 2250 5050 50  0000 C TNN
+F 2 "Resistors_SMD:R_2010" V 2280 5050 50  0001 C CNN
+F 3 "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0005+ERJS1DF3303U+7+WW" H 2350 5050 50  0001 C CNN
+F 4 "1%, 1W" H 2350 5050 60  0001 C CNN "Characteristics"
+F 5 "2010M" H 2350 5050 60  0001 C CNN "Package ID"
+F 6 "ANY" H 2350 5050 60  0001 C CNN "Source"
+F 7 "Panasonic Electronic Components " H 2350 5050 60  0001 C CNN "Manufacturer Name"
+F 8 " ERJ-S1DF3303U" H 2350 5050 60  0001 C CNN "Manufacturer Part Number"
+	1    2350 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 56EED3B3
+P 3950 6300
+F 0 "R9" V 4030 6300 50  0000 C CNN
+F 1 "1.00k" V 3950 6300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 6300 50  0001 C CNN
+F 3 "" H 3950 6300 50  0000 C CNN
+F 4 "1%, 0.063W" H 3950 6300 60  0001 C CNN "Characteristics"
+F 5 "0805" H 3950 6300 60  0001 C CNN "Package ID"
+F 6 "ANY" H 3950 6300 60  0001 C CNN "Source"
+	1    3950 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 56EED480
+P 3950 7300
+F 0 "R10" V 4030 7300 50  0000 C CNN
+F 1 "1.00k" V 3950 7300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3880 7300 50  0001 C CNN
+F 3 "" H 3950 7300 50  0000 C CNN
+F 4 "1%, 0.063W" H 3950 7300 60  0001 C CNN "Characteristics"
+F 5 "0805" H 3950 7300 60  0001 C CNN "Package ID"
+F 6 "ANY" H 3950 7300 60  0001 C CNN "Source"
+	1    3950 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L2
+U 1 1 56EF00CE
+P 3350 7300
+F 0 "L2" V 3300 7300 50  0000 C CNN
+F 1 "INDUCTOR" V 3450 7300 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 3350 7300 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0110S0100BLM21B.pdf" H 3350 7300 50  0001 C CNN
+F 4 "120 Ohm @ 100MHz " H 3350 7300 60  0001 C CNN "Characteristics"
+F 5 "Chip Ferrite Bead" H 3350 7300 60  0001 C CNN "Description"
+F 6 "0805" H 3350 7300 60  0001 C CNN "Package ID"
+F 7 "SPEC" H 3350 7300 60  0001 C CNN "Source"
+F 8 "Murata Electronics North America" H 3350 7300 60  0001 C CNN "Manufacturer Name"
+F 9 "BLM21BD121SN1D" H 3350 7300 60  0001 C CNN "Manufacturer Part Number"
+	1    3350 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C4
+U 1 1 56EF2D88
+P 4350 5750
+F 0 "C4" H 4375 5850 50  0000 L CNN
+F 1 "47pF" H 4375 5650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4388 5600 50  0001 C CNN
+F 3 "" H 4350 5750 50  0000 C CNN
+F 4 "CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0" H 4350 5750 60  0001 C CNN "Characteristics"
+F 5 "0805" H 4350 5750 60  0001 C CNN "Package ID"
+F 6 "ANY" H 4350 5750 60  0001 C CNN "Source"
+	1    4350 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 56EF343F
+P 4350 6500
+F 0 "C5" H 4375 6600 50  0000 L CNN
+F 1 "47pF" H 4375 6400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4388 6350 50  0001 C CNN
+F 3 "" H 4350 6500 50  0000 C CNN
+F 4 "CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0" H 4350 6500 60  0001 C CNN "Characteristics"
+F 5 "0805" H 4350 6500 60  0001 C CNN "Package ID"
+F 6 "ANY" H 4350 6500 60  0001 C CNN "Source"
+	1    4350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 56EF3562
+P 4350 7050
+F 0 "C6" H 4375 7150 50  0000 L CNN
+F 1 "47pF" H 4375 6950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4388 6900 50  0001 C CNN
+F 3 "" H 4350 7050 50  0000 C CNN
+F 4 "CAP, CERM, 47pF, 50V, +/-5%, C0G/NP0" H 4350 7050 60  0001 C CNN "Characteristics"
+F 5 "0805" H 4350 7050 60  0001 C CNN "Package ID"
+F 6 "ANY" H 4350 7050 60  0001 C CNN "Source"
+	1    4350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 56EF4115
+P 4850 6750
+F 0 "C8" H 4875 6850 50  0000 L CNN
+F 1 "15pF" H 4875 6650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4888 6600 50  0001 C CNN
+F 3 "" H 4850 6750 50  0000 C CNN
+F 4 "CAP, CERM, 50V, +/-10%, X7R" H 4850 6750 60  0001 C CNN "Description"
+F 5 "0805" H 4850 6750 60  0001 C CNN "Package ID"
+F 6 "ANY" H 4850 6750 60  0001 C CNN "Source"
+	1    4850 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 56EFFF64
+P 1550 2650
+F 0 "R14" V 1630 2650 50  0000 C CNN
+F 1 "NM" V 1550 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1480 2650 50  0001 C CNN
+F 3 "" H 1550 2650 50  0000 C CNN
+F 4 "0805" H 1550 2650 60  0001 C CNN "Package ID"
+F 5 "ANY" H 1550 2650 60  0001 C CNN "Source"
+F 6 "Used only if JTAG should be used" H 1550 2650 60  0001 C CNN "Notes"
+	1    1550 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 56F0002A
+P 1550 2800
+F 0 "R15" V 1630 2800 50  0000 C CNN
+F 1 "NM" V 1550 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1480 2800 50  0001 C CNN
+F 3 "" H 1550 2800 50  0000 C CNN
+F 4 "0805" H 1550 2800 60  0001 C CNN "Package ID"
+F 5 "ANY" H 1550 2800 60  0001 C CNN "Source"
+F 6 "Used only if JTAG should be used" H 1550 2800 60  0001 C CNN "Notes"
+	1    1550 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 56F000ED
+P 1550 3100
+F 0 "R17" V 1630 3100 50  0000 C CNN
+F 1 "NM" V 1550 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1480 3100 50  0001 C CNN
+F 3 "" H 1550 3100 50  0000 C CNN
+F 4 "0805" H 1550 3100 60  0001 C CNN "Package ID"
+F 5 "ANY" H 1550 3100 60  0001 C CNN "Source"
+F 6 "Used only if JTAG should be used" H 1550 3100 60  0001 C CNN "Notes"
+	1    1550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L C C9
+U 1 1 56F01ABE
+P 5100 1200
+F 0 "C9" H 5125 1300 50  0000 L CNN
+F 1 "100nF" H 5125 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5138 1050 50  0001 C CNN
+F 3 "" H 5100 1200 50  0000 C CNN
+F 4 "CERM, 10V, +/-10%, X5R" H 5100 1200 60  0001 C CNN "Characteristics"
+F 5 "0805" H 5100 1200 60  0001 C CNN "Package ID"
+F 6 "ANY" H 5100 1200 60  0001 C CNN "Source"
+	1    5100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR014
+U 1 1 56F031CB
+P 6800 3350
+F 0 "#PWR014" H 6800 3200 50  0001 C CNN
+F 1 "VCC" H 6800 3500 50  0000 C CNN
+F 2 "" H 6800 3350 50  0000 C CNN
+F 3 "" H 6800 3350 50  0000 C CNN
+	1    6800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 56F0388C
+P 5400 700
+F 0 "#PWR015" H 5400 550 50  0001 C CNN
+F 1 "VCC" H 5400 850 50  0000 C CNN
+F 2 "" H 5400 700 50  0000 C CNN
+F 3 "" H 5400 700 50  0000 C CNN
+	1    5400 700 
+	1    0    0    -1  
+$EndComp
+Text Label 5150 800  0    60   ~ 0
+3.3V
+$Comp
+L R R20
+U 1 1 56F0A619
+P 10300 1150
+F 0 "R20" V 10380 1150 50  0000 C CNN
+F 1 "390" V 10300 1150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10230 1150 50  0001 C CNN
+F 3 "" H 10300 1150 50  0000 C CNN
+F 4 "5%, 0.125W" H 10300 1150 60  0001 C CNN "Characteristics"
+F 5 "0805" H 10300 1150 60  0001 C CNN "Package ID"
+F 6 "ANY" H 10300 1150 60  0001 C CNN "Source"
+F 7 "Panasonic Electronic Components" H 10300 1150 60  0001 C CNN "Manufacturer Name"
+F 8 "ERJ-6GEYJ391V" H 10300 1150 60  0001 C CNN "Manufacturer Part Number"
+	1    10300 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R21
+U 1 1 56F0A6EB
+P 10300 1350
+F 0 "R21" V 10380 1350 50  0000 C CNN
+F 1 "390" V 10300 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10230 1350 50  0001 C CNN
+F 3 "" H 10300 1350 50  0000 C CNN
+F 4 "5%, 0.125W" H 10300 1350 60  0001 C CNN "Characteristics"
+F 5 "0805" H 10300 1350 60  0001 C CNN "Package ID"
+F 6 "ANY" H 10300 1350 60  0001 C CNN "Source"
+F 7 "Panasonic Electronic Components" H 10300 1350 60  0001 C CNN "Manufacturer Name"
+F 8 "ERJ-6GEYJ391V" H 10300 1350 60  0001 C CNN "Manufacturer Part Number"
+	1    10300 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R22
+U 1 1 56F0A7BC
+P 10300 1550
+F 0 "R22" V 10380 1550 50  0000 C CNN
+F 1 "390" V 10300 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 10230 1550 50  0001 C CNN
+F 3 "" H 10300 1550 50  0000 C CNN
+F 4 "5%, 0.125W" H 10300 1550 60  0001 C CNN "Characteristics"
+F 5 "0805" H 10300 1550 60  0001 C CNN "Package ID"
+F 6 "ANY" H 10300 1550 60  0001 C CNN "Source"
+F 7 "Panasonic Electronic Components" H 10300 1550 60  0001 C CNN "Manufacturer Name"
+F 8 "ERJ-6GEYJ391V" H 10300 1550 60  0001 C CNN "Manufacturer Part Number"
+	1    10300 1550
+	0    1    1    0   
+$EndComp
+NoConn ~ 2750 2900
+$Comp
+L F_Small F1
+U 1 1 56F1DD0D
+P 1400 1350
+F 0 "F1" H 1360 1410 50  0000 L CNN
+F 1 "1A" H 1280 1290 50  0000 L CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_Schurter_0031_8201" H 1400 1350 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/358/typ_OGN-14523.pdf" H 1400 1350 50  0001 C CNN
+F 4 "10A, 250V" H 1400 1350 60  0001 C CNN "Characteristics"
+F 5 "Fuse holder" H 1400 1350 60  0001 C CNN "Description 5x20mm"
+F 6 "Through Hole, Horizontal" H 1400 1350 60  0001 C CNN "Package ID"
+F 7 "SPEC" H 1400 1350 60  0001 C CNN "Source"
+F 8 "Schurter" H 1400 1350 60  0001 C CNN "Manufacturer Name"
+F 9 "0031.8201" H 1400 1350 60  0001 C CNN "Manufacturer Part Number"
+	1    1400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Storage Fuse1
+U 1 1 56F1FADE
+P 850 700
+F 0 "Fuse1" H 850 600 60  0000 C CNN
+F 1 "1A" H 850 700 60  0000 C CNN
+F 2 "" H 850 700 60  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/358/typ_OGN-14523.pdf" H 850 700 60  0001 C CNN
+F 4 "1A, 250VAC, 5x20mm" H 850 700 60  0001 C CNN "Characteristics"
+F 5 "Fuse" H 850 700 60  0001 C CNN "Description"
+F 6 "Through Hole, Horizontal" H 850 700 60  0001 C CNN "Package ID"
+F 7 "ANY" H 850 700 60  0001 C CNN "Source"
+F 8 "Schurter" H 850 700 60  0001 C CNN "Manufacturer Name"
+F 9 "0034.3117" H 850 700 60  0001 C CNN "Manufacturer Part Number"
+	1    850  700 
+	1    0    0    -1  
+$EndComp
+Text GLabel 7550 5200 0    60   Input ~ 0
+TXD
+Text GLabel 7300 5100 0    60   Input ~ 0
+RXD
+$Comp
+L XBEE U3
+U 1 1 56F0FA20
+P 8500 5600
+F 0 "U3" H 8250 6700 60  0000 C CNN
+F 1 "XBEE" H 8300 6400 60  0000 C CNN
+F 2 "My modules:XBEE-HEADER" H 8500 5600 60  0001 C CNN
+F 3 "" H 8500 5600 60  0000 C CNN
+	1    8500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR016
+U 1 1 56F1400C
+P 7550 4850
+F 0 "#PWR016" H 7550 4700 50  0001 C CNN
+F 1 "VCC" H 7550 5000 50  0000 C CNN
+F 2 "" H 7550 4850 50  0000 C CNN
+F 3 "" H 7550 4850 50  0000 C CNN
+	1    7550 4850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7800 5600
+NoConn ~ 7800 5700
+$Comp
+L GNDD #PWR017
+U 1 1 56F20547
+P 7550 6050
+F 0 "#PWR017" H 7550 5800 50  0001 C CNN
+F 1 "GNDD" H 7550 5900 50  0000 C CNN
+F 2 "" H 7550 6050 50  0000 C CNN
+F 3 "" H 7550 6050 50  0000 C CNN
+	1    7550 6050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 4900 2    60   Input ~ 0
+SBWTDIO
+Text GLabel 10350 2350 2    60   Output ~ 0
+CTRL1
+Text GLabel 9500 5000 2    60   Input ~ 0
+CTRL1
+Text GLabel 10350 3150 2    60   Output ~ 0
+CTRL2
+Text GLabel 9850 5100 2    60   Input ~ 0
+CTRL2
+NoConn ~ 7600 5400
+NoConn ~ 7600 5500
+NoConn ~ 7600 5800
+NoConn ~ 9400 6000
+NoConn ~ 9400 5900
+NoConn ~ 9400 5700
+NoConn ~ 9400 5600
+NoConn ~ 9400 5500
+NoConn ~ 9400 5400
+NoConn ~ 9400 5300
+Text Label 9450 4900 0    60   ~ 0
+Reset
+Text GLabel 9500 5200 2    60   Input ~ 0
+RELAY
+$Comp
+L CONN_01X01 P4
+U 1 1 56F41026
+P 900 5050
+F 0 "P4" H 900 5150 50  0000 C CNN
+F 1 "Live In" V 1000 5050 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 900 5050 50  0001 C CNN
+F 3 "" H 900 5050 50  0000 C CNN
+	1    900  5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P3
+U 1 1 56F41555
+P 900 4700
+F 0 "P3" H 900 4800 50  0000 C CNN
+F 1 "Live Out" V 1000 4700 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 900 4700 50  0001 C CNN
+F 3 "" H 900 4700 50  0000 C CNN
+	1    900  4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 56F417BB
+P 900 6000
+F 0 "P5" H 900 6100 50  0000 C CNN
+F 1 "Neutral_In" V 1000 6000 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 900 6000 50  0001 C CNN
+F 3 "" H 900 6000 50  0000 C CNN
+	1    900  6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 56F41AF1
+P 900 7300
+F 0 "P6" H 900 7400 50  0000 C CNN
+F 1 "Neutral_Out" V 1000 7300 50  0000 C CNN
+F 2 "Connect:Banana_Jack_1Pin" H 900 7300 50  0001 C CNN
+F 3 "" H 900 7300 50  0000 C CNN
+	1    900  7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG018
+U 1 1 56F442C6
+P 1600 5450
+F 0 "#FLG018" H 1600 5545 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 5630 50  0000 C CNN
+F 2 "" H 1600 5450 50  0000 C CNN
+F 3 "" H 1600 5450 50  0000 C CNN
+	1    1600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG019
+U 1 1 56F445CF
+P 1400 5850
+F 0 "#FLG019" H 1400 5945 50  0001 C CNN
+F 1 "PWR_FLAG" H 1400 6030 50  0000 C CNN
+F 2 "" H 1400 5850 50  0000 C CNN
+F 3 "" H 1400 5850 50  0000 C CNN
+	1    1400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TVS D3
+U 1 1 56EEA550
+P 2750 6650
+F 0 "D3" H 2750 6800 50  0000 C CNN
+F 1 "SMAJ5.0CA" H 2750 6500 50  0000 C CNN
+F 2 "Diodes_SMD:SMA_Standard" H 2750 6650 50  0001 C CNN
+F 3 "http://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smaj_datasheet.pdf.pdf" H 2750 6650 50  0001 C CNN
+F 4 "TVS DIODE 5VWM 9.2VC SMA " H 2750 6650 60  0001 C CNN "Description"
+F 5 "DO-214AC" H 2750 6650 60  0001 C CNN "Package ID"
+F 6 "SPEC" H 2750 6650 60  0001 C CNN "Source"
+F 7 "Littelfuse Inc." H 2750 6650 60  0001 C CNN "Manufacturer Name"
+F 8 "SMAJ5.0CA " H 2750 6650 60  0001 C CNN "Manufacturer Part Number"
+	1    2750 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 950  6900 950 
+Wire Wire Line
+	6700 1150 6900 1150
+Wire Wire Line
+	6150 2900 6150 3550
+Wire Wire Line
+	6150 2550 6900 2550
+Wire Wire Line
+	6800 2950 6900 2950
+Wire Wire Line
+	6900 3150 6550 3150
+Wire Wire Line
+	6550 3150 6550 3200
+Wire Wire Line
+	6350 2750 6350 2950
+Connection ~ 6350 2950
+Wire Wire Line
+	6150 2950 6500 2950
+Wire Wire Line
+	6750 3550 6900 3550
+Wire Wire Line
+	6750 3850 6750 3850
+Wire Wire Line
+	6650 1350 6900 1350
+Wire Wire Line
+	6650 1550 6900 1550
+Wire Wire Line
+	10000 950  10150 950 
+Wire Wire Line
+	10000 1150 10150 1150
+Wire Wire Line
+	10000 1350 10150 1350
+Wire Wire Line
+	10000 1550 10150 1550
+Wire Wire Line
+	10000 1750 10150 1750
+Wire Wire Line
+	10000 1950 10150 1950
+Wire Wire Line
+	11100 1750 10450 1750
+Wire Wire Line
+	11100 700  11100 1950
+Wire Wire Line
+	11100 1950 10450 1950
+Connection ~ 11100 1750
+Wire Wire Line
+	6150 2550 6150 2600
+Wire Wire Line
+	10000 2550 10350 2550
+Wire Wire Line
+	10000 2750 10350 2750
+Wire Wire Line
+	10000 2950 10350 2950
+Wire Wire Line
+	10000 3350 10350 3350
+Wire Wire Line
+	10000 3550 10350 3550
+Wire Wire Line
+	10350 3750 10250 3750
+Wire Wire Line
+	10250 3750 10250 2750
+Connection ~ 10250 2750
+Wire Wire Line
+	10350 3950 10150 3950
+Wire Wire Line
+	10150 3950 10150 2550
+Connection ~ 10150 2550
+Wire Wire Line
+	10050 3550 10050 4100
+Connection ~ 10050 3550
+Wire Wire Line
+	9950 4000 10050 4000
+Connection ~ 10050 4000
+Wire Wire Line
+	9550 3950 9550 4000
+Wire Wire Line
+	9550 4000 9650 4000
+Wire Wire Line
+	10850 950  11100 950 
+Connection ~ 11100 950 
+Wire Wire Line
+	10850 1150 11100 1150
+Connection ~ 11100 1150
+Wire Wire Line
+	10850 1350 11100 1350
+Connection ~ 11100 1350
+Wire Wire Line
+	10850 1550 11100 1550
+Connection ~ 11100 1550
+Wire Wire Line
+	1100 4700 1450 4700
+Wire Wire Line
+	1400 5850 1400 6450
+Connection ~ 1400 6000
+Wire Wire Line
+	1400 6750 1400 7300
+Wire Wire Line
+	2750 7300 2750 6950
+Connection ~ 2750 6000
+Wire Wire Line
+	2750 5050 2750 5200
+Wire Wire Line
+	2500 5050 3800 5050
+Wire Wire Line
+	2100 5050 2200 5050
+Wire Wire Line
+	1700 5050 1800 5050
+Connection ~ 2750 7300
+Wire Wire Line
+	3100 5050 3100 5350
+Connection ~ 2750 5050
+Wire Wire Line
+	3100 6000 3100 5650
+Connection ~ 3100 6000
+Connection ~ 3100 5050
+Wire Wire Line
+	4100 6000 5150 6000
+Wire Wire Line
+	4350 6000 4350 5900
+Wire Wire Line
+	4350 5400 4350 5600
+Wire Wire Line
+	4350 5100 4350 5050
+Wire Wire Line
+	4100 5050 5150 5050
+Wire Wire Line
+	4150 5500 4350 5500
+Connection ~ 4350 5500
+Wire Wire Line
+	3650 6300 3800 6300
+Wire Wire Line
+	4100 6300 5150 6300
+Wire Wire Line
+	4350 6300 4350 6350
+Wire Wire Line
+	4350 6650 4350 6900
+Wire Wire Line
+	4350 7200 4350 7300
+Wire Wire Line
+	4100 7300 5150 7300
+Wire Wire Line
+	3800 7300 3650 7300
+Wire Wire Line
+	4050 6750 4350 6750
+Connection ~ 4350 6750
+Wire Wire Line
+	4850 6300 4850 6600
+Connection ~ 4350 6300
+Wire Wire Line
+	4850 7300 4850 6900
+Connection ~ 4350 7300
+Connection ~ 4850 7300
+Connection ~ 4850 6300
+Wire Wire Line
+	4850 5050 4850 5350
+Connection ~ 4350 5050
+Wire Wire Line
+	4850 6000 4850 5650
+Connection ~ 4350 6000
+Connection ~ 4850 5050
+Connection ~ 4850 6000
+Wire Wire Line
+	3000 1100 3200 1100
+Wire Wire Line
+	3200 1100 3200 800 
+Wire Wire Line
+	3200 800  3950 800 
+Wire Wire Line
+	3650 600  3650 1050
+Wire Wire Line
+	3400 800  3400 1000
+Connection ~ 3400 800 
+Wire Wire Line
+	3000 1300 3200 1300
+Wire Wire Line
+	3200 1300 3200 1550
+Wire Wire Line
+	3650 1550 3650 1350
+Wire Wire Line
+	3400 1400 3400 1550
+Connection ~ 3400 1550
+Connection ~ 3650 800 
+Connection ~ 3650 1550
+Wire Wire Line
+	3650 600  3800 600 
+Wire Wire Line
+	4500 1250 4500 1700
+Wire Wire Line
+	5050 800  5400 800 
+Wire Wire Line
+	1250 2350 1400 2350
+Wire Wire Line
+	1250 2500 1400 2500
+Wire Wire Line
+	1700 2500 1700 2350
+Wire Wire Line
+	1700 2500 2250 2500
+Wire Wire Line
+	1250 2650 1400 2650
+Wire Wire Line
+	1250 2800 1400 2800
+Wire Wire Line
+	1250 2950 1400 2950
+Wire Wire Line
+	1700 2650 1950 2650
+Wire Wire Line
+	1950 2650 1950 2600
+Wire Wire Line
+	1950 2600 2250 2600
+Wire Wire Line
+	1700 2800 2000 2800
+Wire Wire Line
+	2000 2800 2000 2700
+Wire Wire Line
+	2000 2700 2250 2700
+Wire Wire Line
+	1700 2950 2050 2950
+Wire Wire Line
+	2050 2950 2050 2800
+Wire Wire Line
+	2050 2800 2250 2800
+Wire Wire Line
+	2150 2900 2250 2900
+Wire Wire Line
+	1250 3100 1400 3100
+Wire Wire Line
+	1700 3100 2200 3100
+Wire Wire Line
+	2200 3100 2200 3000
+Wire Wire Line
+	2200 3000 2250 3000
+Wire Wire Line
+	2750 2800 3100 2800
+Wire Wire Line
+	3050 2250 3050 2500
+Wire Wire Line
+	3050 2500 2750 2500
+Wire Wire Line
+	3550 2250 3550 2600
+Wire Wire Line
+	3550 2600 2750 2600
+Wire Wire Line
+	3300 2100 3300 2150
+Connection ~ 4500 1550
+Wire Wire Line
+	3750 3600 4200 3600
+Wire Wire Line
+	3800 3400 4200 3400
+Wire Wire Line
+	5000 3500 5200 3500
+Wire Wire Line
+	4200 3700 4200 4050
+Wire Wire Line
+	3850 4250 3900 4250
+Wire Wire Line
+	10000 2150 10350 2150
+Wire Wire Line
+	3450 4250 3550 4250
+Wire Wire Line
+	4200 4450 4200 4600
+Wire Wire Line
+	4000 3650 4000 3600
+Connection ~ 4000 3600
+Wire Wire Line
+	4000 3950 4200 3950
+Connection ~ 4200 3950
+Wire Wire Line
+	1200 5450 1600 5450
+Wire Wire Line
+	5400 700  5400 1050
+Connection ~ 5400 800 
+Wire Wire Line
+	3900 1050 3900 800 
+Connection ~ 3900 800 
+Wire Wire Line
+	3900 1550 3900 1350
+Connection ~ 3900 1550
+Wire Wire Line
+	5100 1050 5100 800 
+Connection ~ 5100 800 
+Wire Wire Line
+	5100 1550 5100 1350
+Connection ~ 5100 1550
+Wire Wire Line
+	5400 1550 5400 1350
+Connection ~ 5400 1550
+Wire Wire Line
+	6800 3350 6900 3350
+Wire Wire Line
+	3200 1550 5400 1550
+Wire Wire Line
+	1000 1050 1750 1050
+Connection ~ 6150 2950
+Wire Wire Line
+	6900 2750 6350 2750
+Wire Wire Line
+	7300 5100 7600 5100
+Wire Wire Line
+	7550 5200 7600 5200
+Wire Wire Line
+	7550 4850 7550 4900
+Wire Wire Line
+	7550 4900 7600 4900
+Wire Wire Line
+	7550 6050 7550 6000
+Wire Wire Line
+	7550 6000 7600 6000
+Wire Wire Line
+	9400 4900 9850 4900
+Wire Wire Line
+	10000 2350 10350 2350
+Wire Wire Line
+	9500 5000 9400 5000
+Wire Wire Line
+	10000 3150 10350 3150
+Wire Wire Line
+	9850 5100 9400 5100
+Wire Wire Line
+	9400 5200 9500 5200
+Connection ~ 1300 5450
+Connection ~ 1400 6350
+Wire Wire Line
+	1000 1350 1300 1350
+Wire Wire Line
+	1500 1350 1750 1350
+Wire Wire Line
+	1100 5050 1400 5050
+Wire Wire Line
+	1300 5450 1300 5050
+Connection ~ 1300 5050
+Connection ~ 2750 6300
+Wire Wire Line
+	1100 6000 3800 6000
+Connection ~ 1400 7300
+Wire Wire Line
+	1200 6350 1400 6350
+$Comp
+L GNDA #PWR020
+U 1 1 5702B7A1
+P 5900 4500
+F 0 "#PWR020" H 5900 4250 50  0001 C CNN
+F 1 "GNDA" H 5900 4350 50  0000 C CNN
+F 2 "" H 5900 4500 50  0000 C CNN
+F 3 "" H 5900 4500 50  0000 C CNN
+	1    5900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR021
+U 1 1 5702B863
+P 6650 4500
+F 0 "#PWR021" H 6650 4250 50  0001 C CNN
+F 1 "GNDD" H 6650 4350 50  0000 C CNN
+F 2 "" H 6650 4500 50  0000 C CNN
+F 3 "" H 6650 4500 50  0000 C CNN
+	1    6650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 5702BB0D
+P 6250 4400
+F 0 "R26" V 6330 4400 50  0000 C CNN
+F 1 "0" V 6250 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6180 4400 50  0001 C CNN
+F 3 "" H 6250 4400 50  0000 C CNN
+	1    6250 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 4400 6650 4400
+Wire Wire Line
+	6650 4400 6650 4500
+Wire Wire Line
+	5900 4500 5900 4400
+Wire Wire Line
+	5900 4400 6100 4400
+Connection ~ 1600 7300
+Wire Wire Line
+	1100 7300 3050 7300
+Wire Wire Line
+	2100 6400 2100 6300
+Connection ~ 2100 6300
+Wire Wire Line
+	2750 5800 2750 6000
+Wire Wire Line
+	2750 6300 2750 6350
+Wire Wire Line
+	1800 6300 1800 6000
+Connection ~ 1800 6000
+Connection ~ 1800 6300
+Wire Wire Line
+	1800 6300 3050 6300
+$EndSCHEMATC
